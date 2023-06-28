@@ -2,7 +2,7 @@ package top.xijinian.leetcode100.longest_substring_without_repeating_characters;
 
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        if (s == null) {
+        if (s == null || s.equals("")) {
             return 0;
         }
         int[] countArray = new int[128];
