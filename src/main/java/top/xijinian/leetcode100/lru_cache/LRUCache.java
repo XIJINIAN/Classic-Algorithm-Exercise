@@ -63,11 +63,10 @@ class LRUCache {
             Node currNode = this.map.get(key);
             transToFirst(currNode);
             currNode.value = value;
-        } else if (this.map.size() == this.capacity) {
-            Node currNode = new Node(key, value);
-            addToFirst(currNode);
-            removeLastNode();
         } else {
+            if (this.map.size() == this.capacity) {
+                removeLastNode();
+            }
             Node currNode = new Node(key, value);
             addToFirst(currNode);
         }
