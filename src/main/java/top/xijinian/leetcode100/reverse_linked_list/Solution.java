@@ -10,7 +10,6 @@ package top.xijinian.leetcode100.reverse_linked_list;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-
 class Solution {
     public class ListNode {
         int val;
